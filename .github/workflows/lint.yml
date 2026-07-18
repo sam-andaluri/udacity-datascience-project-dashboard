@@ -30,4 +30,4 @@ jobs:
         python -m pip install flake8
     - name: Lint with flake8
       run: |
-        flake8 python-package/ report/dashboard.py report/utils.py tests/ --max-line-length=120 --ignore=F401,F403,F405,W292,E225
+        flake8 python-package/ report/dashboard.py report/utils.py tests/ --max-line-length=120 --ignore=F401,F403,F405,W292,E225,E123

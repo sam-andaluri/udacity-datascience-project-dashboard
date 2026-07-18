@@ -79,3 +79,27 @@ erDiagram
   employee ||--o{ employee_events : "employee_id"
   notes }o--o{ employee_events : ""
 ```
+
+### Setup and Running
+
+**Requirements:** Python 3.10
+
+```bash
+# Create virtual environment
+python3.10 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests
+pytest tests/
+
+# Run dashboard
+cd report
+python dashboard.py
+```
+
+The dashboard will be available at `http://localhost:5001`
